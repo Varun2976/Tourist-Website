@@ -3,6 +3,7 @@ body,html{
     min-height: 100vh;
     margin: 0;
     
+    
 }
 nav{
     display: flex;
@@ -40,4 +41,9 @@ nav a:hover{
 .Menu:hover{
     cursor: pointer;
     background-color: hsl(0, 7%, 80%);
+}
+.main{
+    background-image: url(assets/Newback.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }

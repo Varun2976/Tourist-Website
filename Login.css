@@ -21,7 +21,7 @@ h1{
     box-shadow: -4px 5px 20px rgba(0, 0, 0, 0.2);
     background-color: white;
     border-radius: 10px;
-    
+    margin-bottom: 50px;
 }
 .login input[type = "text"]{
     padding-left: 12px;
@@ -36,18 +36,7 @@ h1{
     
     
 }
-#pass{
-    position: relative;
-}
-#pass .icon{
-    position: absolute;
-  right: 10px; /* closer to the right edge */
-  top: 50%;
-  transform: translateY(-50%);
-  color: #4b4949;
-  font-size: 1.2em;
-  pointer-events: none;
-}
+
 .login input::placeholder{
     color: #4b4949;
     
@@ -76,5 +65,9 @@ input{
     margin-top: 20px;
     font-size: 1.5em;
     border-radius: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: rgb(215, 105, 210);
 }

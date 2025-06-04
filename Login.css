@@ -25,17 +25,28 @@ h1{
 }
 .login input[type = "text"]{
     padding-left: 12px;
-    color: white;
+    color: rgb(0, 0, 0);
     
 }
 .login input[type = "password"]{
-    padding-left: 12px;
     
-    padding-top: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 2em;
 
     
+    
+}
+#pass{
+    position: relative;
+}
+#pass .icon{
+    position: absolute;
+  right: 10px; /* closer to the right edge */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #4b4949;
+  font-size: 1.2em;
+  pointer-events: none;
 }
 .login input::placeholder{
     color: #4b4949;
@@ -47,15 +58,14 @@ input{
     height: 50px;
     width: 250px;
     font-size: 1.5em;
-    border-radius: 50px;
-    border: 2px solid grey;
-    background-color: #ffffff53;
-
+    border-bottom: 2px solid grey; ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: white;
+    outline: none;
     
-    backdrop-filter: blur(10px) ;
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
-   
-    opacity: 0.3px;
+    
 }
 #submit{
     background-color: rgb(203, 25, 203);

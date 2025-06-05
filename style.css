@@ -1,8 +1,10 @@
-body,html{
+body{
     font-family: Poppins;
     min-height: 100vh;
     margin: 0;
-    
+    background-image: url(assets/background.png);
+    background-size: cover;
+    background-attachment: fixed;
     
 }
 nav{
@@ -13,7 +15,7 @@ nav{
     
     font-size: 20px;
     box-shadow: 2px grey;
-   
+    background-color: white;
     box-shadow: 0 4px 12px rgb(92, 90, 90);
     
     
@@ -43,7 +45,33 @@ nav a:hover{
     background-color: hsl(0, 7%, 80%);
 }
 .main{
-    background-image: url(assets/Newback.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+.About{
+    display: flex;
+    flex-direction: column;
+    width: 1300px;
+    background-color: white;
+    margin-top: 30px;
+    padding-left: 10px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: -4px 5px 100px rgba(0, 0, 0, 1);
+    
+    
+}
+.About h1{
+    text-align: center;
+    font-size: 2em;
+    color: rgb(14, 14, 186);
+}
+.About p{
+    width: 800px;
+    
+}
+#textabout{
+    text-align: center;
+    margin-left: 250px;
+    margin-bottom: 40px;
 }

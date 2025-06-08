@@ -14,8 +14,19 @@ function register(){
     }
     else{
         localStorage.setItem("username" , username);
+        localStorage.setItem("phone",number)
+        document.getElementById("username").textContent = username;
         window.location.href = "index.html";
         
     }
 
+    
+
 }
+window.addEventListener("DOMContentLoaded", () => {
+    const username = localStorage.getItem("username") || "Guest";
+    const phone = localStorage.getItem("phone") || "Not provided";
+
+    document.getElementById("username").textContent = username;
+    document.getElementById("num").textContent = phone;
+});
